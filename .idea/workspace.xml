@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a006363-1e3b-4f52-b18e-84a49a8a3834" name="Changes" comment="branch develop">
+    <list default="true" id="6a006363-1e3b-4f52-b18e-84a49a8a3834" name="Changes" comment="branch develop v1.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controladores/controladorPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controladores/controladorPokemon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/NextEvolutionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/NextEvolutionItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Pokedex.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/PrevEvolutionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/PrevEvolutionItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +24,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -82,7 +83,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.main">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="PokedexJava.main" />
@@ -90,8 +91,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PokedexJava [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PokedexJava [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PokedexJava [clean]" />
+        <item itemvalue="Gradle.PokedexJava [build]" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
@@ -107,7 +154,9 @@
       <workItem from="1695334123343" duration="4161000" />
       <workItem from="1695392933415" duration="568000" />
       <workItem from="1695549606555" duration="1525000" />
-      <workItem from="1695551203875" duration="9111000" />
+      <workItem from="1695551203875" duration="9356000" />
+      <workItem from="1695574811677" duration="5179000" />
+      <workItem from="1695592363833" duration="6587000" />
     </task>
     <task id="LOCAL-00001" summary="branch develop">
       <option name="closed" value="true" />
@@ -117,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695550877948</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="branch develop v1.1">
+      <option name="closed" value="true" />
+      <created>1695560576366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695560576366</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="branch develop" />
-    <option name="LAST_COMMIT_MESSAGE" value="branch develop" />
+    <MESSAGE value="branch develop v1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="branch develop v1.1" />
   </component>
 </project>
