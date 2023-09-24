@@ -32,7 +32,7 @@ public class controladorPokemon {
         String paisesFile = dir + File.separator + "pokemon.json";
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
-        // Actualizar a try-with-resources
+
         try (Reader reader = Files.newBufferedReader(Paths.get(paisesFile))) {
             this.pokedex = gson.fromJson(reader, new TypeToken<Pokedex>() {}.getType());
             System.out.println("pokedex cargada: " + pokedex.getPokemon().size());
@@ -44,4 +44,5 @@ public class controladorPokemon {
     public Pokemon getPokemon(int index) {
         return pokedex.getPokemon().get(index);
     }
+
 }
