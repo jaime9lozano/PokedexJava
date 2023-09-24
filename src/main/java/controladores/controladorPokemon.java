@@ -10,6 +10,10 @@ import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collections;
+import java.util.List;
+import java.util.Comparator;
+import java.util.stream.Collectors;
 
 public class controladorPokemon {
     private static controladorPokemon instance;
@@ -17,6 +21,7 @@ public class controladorPokemon {
 
     private controladorPokemon() {
         loadPokedex();
+        run();
     }
 
     public static controladorPokemon getInstance() {
@@ -34,15 +39,19 @@ public class controladorPokemon {
 
 
         try (Reader reader = Files.newBufferedReader(Paths.get(paisesFile))) {
-            this.pokedex = gson.fromJson(reader, new TypeToken<Pokedex>() {}.getType());
-            System.out.println("pokedex cargada: " + pokedex.getPokemon().size());
+            pokedex = gson.fromJson(reader, new TypeToken<Pokedex>() {}.getType());
+            System.out.println("pokedex cargada: "+pokedex.getPokemon().size());
+
+
         } catch (Exception e) {
             System.out.println("Error al cargar la Pokedex!");
             System.out.println("Error: " + e.getMessage());
         }
     }
-    public Pokemon getPokemon(int index) {
-        return pokedex.getPokemon().get(index);
+    private void run(){
+        cincoUltimos();
     }
-
+   private void cincoUltimos(){
+    ((List<?>) pokedex).stream().sorted(java.util.Collections.reverseOrder()).limit(5).forEach(System.out::println);
+    }
 }
