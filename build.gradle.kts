@@ -16,6 +16,8 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
 // https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly("org.projectlombok:lombok:1.18.28")
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.15.2")
 
 }
 
