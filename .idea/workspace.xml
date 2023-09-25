@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a006363-1e3b-4f52-b18e-84a49a8a3834" name="Changes" comment="branch develop v1.2">
-      <change afterPath="$PROJECT_DIR$/Data/pokemon.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controladores/controladorcsv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modelos/PokemonCsv.java" afterDir="false" />
+    <list default="true" id="6a006363-1e3b-4f52-b18e-84a49a8a3834" name="Changes" comment="branch develop v1.3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controladores/controladorH2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
@@ -16,6 +14,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -158,7 +159,7 @@
       <workItem from="1695551203875" duration="9356000" />
       <workItem from="1695574811677" duration="5179000" />
       <workItem from="1695592363833" duration="6748000" />
-      <workItem from="1695634698318" duration="5532000" />
+      <workItem from="1695634698318" duration="7278000" />
     </task>
     <task id="LOCAL-00001" summary="branch develop">
       <option name="closed" value="true" />
@@ -184,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695599073215</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="branch develop v1.3">
+      <option name="closed" value="true" />
+      <created>1695640585672</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1695640585672</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +214,7 @@
     <MESSAGE value="branch develop" />
     <MESSAGE value="branch develop v1.1" />
     <MESSAGE value="branch develop v1.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="branch develop v1.2" />
+    <MESSAGE value="branch develop v1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="branch develop v1.3" />
   </component>
 </project>
