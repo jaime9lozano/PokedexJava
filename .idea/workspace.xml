@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a006363-1e3b-4f52-b18e-84a49a8a3834" name="Changes" comment="branch develop v1.3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controladores/controladorH2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controladores/controladorPokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controladores/controladorPokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modelos/Pokedex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modelos/Pokedex.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +160,7 @@
       <workItem from="1695574811677" duration="5179000" />
       <workItem from="1695592363833" duration="6748000" />
       <workItem from="1695634698318" duration="7278000" />
+      <workItem from="1695802891828" duration="5692000" />
     </task>
     <task id="LOCAL-00001" summary="branch develop">
       <option name="closed" value="true" />
