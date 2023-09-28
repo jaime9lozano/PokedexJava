@@ -36,7 +36,11 @@ public class controladorcsv {
         String paisesFile = dir + File.separator + "pokemon.csv";
         return paisesFile;
     }
-private void pokemoncsv(){
+
+    /**
+     * Genera un archivo csv a partir de un json y el arraylist pokedex
+     */
+    private void pokemoncsv(){
     try {
         ObjectMapper objectMapper = new ObjectMapper();
         JsonNode rootNode = objectMapper.readTree(new File(json()));
@@ -65,7 +69,11 @@ private void pokemoncsv(){
         e.printStackTrace();
     }
 }
-private void mostrarCsv(){
+
+    /**
+     * Lee un csv y muestra los datos por pantalla
+     */
+    private void mostrarCsv(){
     try (BufferedReader reader = new BufferedReader(new FileReader(csv()))) {
         Stream<PokemonCsv> pokemons = reader.lines()
                 .map(linea -> linea.split(",")) // separar cada línea en un array de strings

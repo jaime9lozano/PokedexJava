@@ -14,7 +14,9 @@ import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
-
+/**
+ * Controlador para la gestión de Pokémon y la Pokedex.
+ */
 public class controladorPokemon {
     private static controladorPokemon instance;
     Pokedex pokedex = new Pokedex();
@@ -30,7 +32,9 @@ public class controladorPokemon {
         }
         return instance;
     }
-
+    /**
+     * Carga la Pokedex desde un archivo JSON mediante un gsonbuilder
+     */
     private void loadPokedex() {
         Path currentRelativePath = Paths.get("");
         String ruta = currentRelativePath.toAbsolutePath().toString();
@@ -49,7 +53,9 @@ public class controladorPokemon {
             System.out.println("Error: " + e.getMessage());
         }
     }
-
+    /**
+     * Método principal que ejecuta todas las operaciones sobre la Pokedex.
+     */
     private void run() {
         cincoUltimos();
         evolucionCharmander();
@@ -69,7 +75,9 @@ public class controladorPokemon {
         mediaAltura();
 
     }
-
+    /**
+     * Muestra los 5 últimos Pokémon, ordenando con un stream en orden inverso
+     */
     private void cincoUltimos() {
         System.out.println();
         System.out.println("5 últimos pokemons");
@@ -79,6 +87,9 @@ public class controladorPokemon {
                 .forEach(System.out::println);
     }
 
+    /**
+     * Muestra la evolucion de charmander mapeando la clase next evolution
+     */
     private void evolucionCharmander() {
         System.out.println();
         System.out.println("evolución de Charmander");
@@ -89,7 +100,9 @@ public class controladorPokemon {
                 .map(Pokemon::getNextEvolution)
                 .forEach(System.out::println);
     }
-
+    /**
+     * Muestra los Pokémon con debilidades de agua o eléctricos.
+     */
     private void debaguaElectrico() {
         System.out.println();
         System.out.println("pokemons con debilidad water o electric");
@@ -100,7 +113,9 @@ public class controladorPokemon {
                 })
                 .forEach(System.out::println);
     }
-
+    /**
+     * Muestra el Pokémon con más debilidades.
+     */
     private void masDebilidades() {
         System.out.println();
         Optional<Pokemon> pokemonConMasDebilidades = pokedex.getPokemon().stream()
@@ -108,7 +123,9 @@ public class controladorPokemon {
         Pokemon masDebilidades = pokemonConMasDebilidades.get();
         System.out.println("El Pokémon con más debilidades es: " + masDebilidades.getName());
     }
-
+    /**
+     * Muestra los Pokémon con evoluciones que no son de tipo fuego.
+     */
     private void evolucionSinFuego() {
         System.out.println();
         System.out.println("Pokemon con una evolución que no es de tipo fire");
@@ -120,6 +137,9 @@ public class controladorPokemon {
                 .map(Pokemon::getPrevEvolution)
                 .forEach(System.out::println);
     }
+    /**
+     * Calcula y muestra la media de peso de los Pokémon eliminando los kg del string del csv
+     */
 
     private void mediaPeso() {
         System.out.println();
@@ -131,7 +151,9 @@ public class controladorPokemon {
                 .orElse(0);
         System.out.println("La media de peso es: " + mediaDePeso + " kg");
     }
-
+    /**
+     * Calcula y muestra la media de evoluciones de los Pokémon.
+     */
     private void mediaEvoluciones() {
         System.out.println();
         double mediaDeEvoluciones = pokedex.getPokemon().stream()
@@ -141,6 +163,9 @@ public class controladorPokemon {
 
         System.out.println("La media de las evoluciones es: " + mediaDeEvoluciones);
     }
+    /**
+     * Muestra los primeros 10 Pokémon.
+     */
 
     private void diezPrimeros() {
         System.out.println();
@@ -150,7 +175,9 @@ public class controladorPokemon {
                 .forEach(System.out::println);
     }
 
-    //Obtener los datos de Pikachu.
+    /**
+     * Obtiene todos los datos del pokemon con nombre Pikachu
+     */
     private void datosPikachu() {
         System.out.println();
         System.out.println("Datos de Pikachu");
@@ -159,7 +186,9 @@ public class controladorPokemon {
                 .forEach(System.out::println);
     }
 
-    // Pokemon de tipo fire
+    /**
+     * Da los datos de todos los pokemons de tipo fuego
+     */
     private void tipoFuego() {
         System.out.println();
         System.out.println("Pokemon tipo Fuego");
@@ -169,6 +198,9 @@ public class controladorPokemon {
 
     }
 
+    /**
+     * Muestra todos los pokemons que tienen una sola debilidad
+     */
     private void pokemonConUnaDebilidad() {
         System.out.println();
         System.out.println("Pokemon con una debilidad");
@@ -176,6 +208,10 @@ public class controladorPokemon {
                 .filter(pokemon -> pokemon.getWeaknesses().size() == 1)
                 .forEach(System.out::println);
     }
+
+    /**
+     * Muestra los pokemons que no tienen ninguna evolucion
+     */
 
     private void pokemonConMenosEvol() {
         System.out.println();
@@ -185,6 +221,9 @@ public class controladorPokemon {
                 .forEach(System.out::println);
     }
 
+    /**
+     * Muestra el pokemon mas  pesado
+     */
     private void masPesado() {
         System.out.println();
         System.out.println("Pokemon mas pesado");
@@ -192,7 +231,9 @@ public class controladorPokemon {
                 .max(Comparator.comparing(pokemon -> Double.parseDouble(pokemon.getWeight().substring(0, pokemon.getWeight().length() - 3))))
                 .ifPresent(System.out::println);
     }
-
+    /**
+     * Muestra el pokemon mas  alto
+     */
     private void masAlto() {
         System.out.println();
         System.out.println("Pokemon mas alto");
@@ -200,7 +241,9 @@ public class controladorPokemon {
                 .max(Comparator.comparing(pokemon -> Double.parseDouble(pokemon.getHeight().substring(0, pokemon.getHeight().length() - 2))))
                 .ifPresent(System.out::println);
     }
-
+    /**
+     * Muestra el pokemon con el nombre mas largo
+     */
     private void nomMasLargo() {
         System.out.println();
         System.out.println("Pokemon con menos evoluciones");
