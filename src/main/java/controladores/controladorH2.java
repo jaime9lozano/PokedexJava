@@ -26,6 +26,11 @@ public class controladorH2 {
         }
         return instance;
     }
+
+    /**
+     *
+     * @return
+     */
     private String csv(){
         Path currentRelativePath = Paths.get("");
         String ruta = currentRelativePath.toAbsolutePath().toString();
@@ -33,6 +38,10 @@ public class controladorH2 {
         String paisesFile = dir + File.separator + "pokemon.csv";
         return paisesFile;
     }
+
+    /**
+     * Crea la tabla y los atributos que tiene est
+     */
     private void creaTabla(){
        try{
            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
@@ -43,6 +52,10 @@ public class controladorH2 {
            e.printStackTrace();
        }
     }
+
+    /**
+     * Prepara un comando para insertar datos a la tabla
+     */
     private void datosTabla(){
         try{
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
@@ -65,7 +78,11 @@ public class controladorH2 {
             e.printStackTrace();
         }
     }
-private void select(){
+
+    /**
+     * Muestra todos las filas y columnas de la tabla pokedex
+     */
+    private void select(){
     try {
         Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
         String querySQL = "SELECT * FROM pokedex";
@@ -91,6 +108,10 @@ private void select(){
         e.printStackTrace();
     }
 }
+
+    /**
+     * Muestra los datos del pokemon cuyo parametro 1 (nombre) es pikachu
+     */
     private void pikachu(){
         try {
             Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "");
